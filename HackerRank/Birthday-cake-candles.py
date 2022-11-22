@@ -7,7 +7,7 @@ def birthdayCakeCandles(candles):
     # if count > 1:
     #     return count
     # return 1
-    return candles.count(max_num)
+        
 
 
 
