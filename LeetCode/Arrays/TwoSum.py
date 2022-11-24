@@ -1,3 +1,5 @@
+# nums = [2,7,11,15]
+# target = 9
 # method-1 brute force
 from typing import List
 

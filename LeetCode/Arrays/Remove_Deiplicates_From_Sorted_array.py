@@ -10,7 +10,6 @@ class Solution:
             if nums[i] != nums[i-1]:
                 nums[insert_index] = nums[i]
                 insert_index += 1
-        print(nums)
         return insert_index
 
 
