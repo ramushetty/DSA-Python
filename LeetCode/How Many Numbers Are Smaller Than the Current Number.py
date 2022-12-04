@@ -6,16 +6,18 @@
 from typing import List
 class Solution:
     def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
-        l = []
-        n = sorted(nums)
-        print(n)
-        d = {}
-        for i in range(len(n)):
-            if n[i] not in d:
-                d[n[i]] = i
-        for i in nums:
-            l.append(d[i])
-        return l
+        # l = []
+        # n = sorted(nums)
+        # print(n)
+        # d = {}
+        # for i in range(len(n)):
+        #     if n[i] not in d:
+        #         d[n[i]] = i
+        # for i in nums:
+        #     l.append(d[i])
+        # return l
+        l1 = sorted(nums)
+        return [l1.index(i) for i in nums]
 
 
 nums = [6,5,1,6]
