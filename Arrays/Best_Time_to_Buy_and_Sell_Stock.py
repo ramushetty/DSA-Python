@@ -43,13 +43,13 @@ class Solution:
 
         # return maxprofit
 
-        l  = []
+            l  = []
 
-        for i in range(len(prices)-1):
+            for i in range(len(prices)-1):
 
-            if prices[i] < prices[i+1]:
-                l.append(prices[i+1] - prices[i])
-        return sum(l)            
+                if prices[i] < prices[i+1]:
+                    l.append(prices[i+1] - prices[i])
+            return sum(l)            
 
 
 prices = [1,2,3,4,5]
