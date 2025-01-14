@@ -12,7 +12,6 @@ class Solution:
                 else:
                     map_diag[i+j] = [mat[i][j]]
         result = []
-        print(map_diag)
         for key in map_diag.items():
             if key[0] % 2 == 0:
                 for e in key[1][::-1]:
