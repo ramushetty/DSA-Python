@@ -7,6 +7,6 @@ class Solution:
             temp = target - nums[i]
             if temp in element_index_dir:
                 return [element_index_dir[temp],i]
-            else:
-                element_index_dir[nums[i]] = i
+            element_index_dir[nums[i]] = i
+        # if no valid pair is found, return an empty list
         return []
