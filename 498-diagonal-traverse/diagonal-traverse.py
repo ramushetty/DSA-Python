@@ -12,13 +12,15 @@ class Solution:
                 else:
                     map_diag[i+j] = [mat[i][j]]
         result = []
+        flag = True
         for key in map_diag.items():
-            if key[0] % 2 == 0:
+            if flag:
                 for e in key[1][::-1]:
                     result.append(e)
             else:
                 for e in key[1]:
                     result.append(e)
+            flag = not flag
         return result
 
 
