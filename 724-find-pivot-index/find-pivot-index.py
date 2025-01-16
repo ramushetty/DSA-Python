@@ -6,7 +6,6 @@ class Solution:
         
         cum_sum = 0
         for index in range(len(nums)):
-            left_sum = cum_sum 
             right_sum = total_sum - cum_sum - nums[index]
             if cum_sum == right_sum:
                 return index
