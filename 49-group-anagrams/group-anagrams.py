@@ -8,9 +8,8 @@ class Solution:
             new_word = ''
             for i in range(26):
                 if  char_array[i] > 0:
-                    temp = chr(ord('a')+i)
-                    for c in range(char_array[i]):
-                        new_word+=temp
+                    temp = chr(ord('a')+i)*char_array[i]
+                    new_word+=temp
             if new_word in h_map:
                 h_map[new_word].append(word)
             else:
