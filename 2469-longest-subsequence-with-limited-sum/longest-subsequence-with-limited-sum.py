@@ -12,6 +12,7 @@ class Solution:
             l = 0
             r = n-1
             res = -1
+            # apply binary search
             while l <= r:
                 mid = l + (r-l)//2
                 if nums[mid] <= queries[idx]:
